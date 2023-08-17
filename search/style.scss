@@ -191,9 +191,15 @@ body {
 		.buttons {
 			input[type='submit'] {
 				font-size: 18px;
-				margin: 0 1.5rem;
-				border: none;
+				margin: 0 0.5rem;
+				border: 1px solid transparent;
 				background-color: #ffffff;
+				padding: 1rem 1.5rem;
+				border-radius: 10px;
+				color: rgb(60, 64, 67);
+				&:hover {
+					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+				}
 			}
 		}
 	}
