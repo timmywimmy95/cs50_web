@@ -134,10 +134,13 @@ html * {
 
 nav {
 	justify-content: space-between;
-	color: #202124;
 	cursor: pointer;
 	padding: 6px;
 	margin-top: 1rem;
+	a {
+		color: #202124;
+		text-decoration: none;
+	}
 	.left {
 		display: flex;
 		flex-direction: row;
@@ -166,6 +169,7 @@ nav {
 }
 
 body {
+	line-height: 28px;
 	.banner {
 		display: flex;
 		margin: 15rem auto 2rem;
@@ -189,6 +193,7 @@ body {
 			}
 		}
 		.buttons {
+			margin-bottom: 2rem;
 			input[type='submit'] {
 				font-size: 18px;
 				margin: 0 0.5rem;
@@ -200,6 +205,19 @@ body {
 				&:hover {
 					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 				}
+			}
+		}
+	}
+	.languages {
+		display: flex;
+		justify-content: center;
+		font-size: large;
+		a {
+			color: #1a0dab;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
